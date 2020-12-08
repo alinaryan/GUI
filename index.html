@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Alina Ryan
+    12/8/2020
+    UMass Lowell Computer Science
+    Alina_Ryan@student.uml.edu
+    Assignment 5 COMP.4610
+    Description: This page takes numbers
+    entered into a form and generates a
+    multiplication table.
+   -->
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <title>HW 5</title>
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+      <div class="jumbotron">
+        <h1 class="display-4">Multiplication Table</h1>
+        <p class="lead">Please enter the table ranges to generate a multiplication table.</p>
+        <hr class="my-4">
+        </div>
+      <table id='mytable'>
+      </table>
+      <section class="container">
+      <form id="my-form">
+        <div class="msg"></div>
+        <div>
+             <label>Min Column Value:</label>
+             <input type="number" id="minCol">
+        </div>
+        <div>
+             <label>Max Column Value:</label>
+             <input type="number" id="maxCol">
+        </div>
+        <div>
+             <label>Min Row Value:</label>
+             <input type="number" id="minRow">
+        </div>
+        <div>
+             <label>Max Row Value: </label>
+             <input type="number" id="maxRow">
+        </div>
+        <input class="button" type="submit" value="Submit">
+      </form>
+      <ul id="numbers"></ul>
+    </section>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    </body>
